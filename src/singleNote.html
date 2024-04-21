@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memourite App</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+  <main class="relative min-h-screen md:flex">
+    <!-- mobile menu bar -->
+    <div class="bg-gray-800 text-gray-100 flex justify-between md:hidden">
+      <!-- logo -->
+      <a href="#" class="block p-4 text-white font-bold"></a>
+      <!-- mobile menu button -->
+      <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
+        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            d="M13.5 2H.5m13 5H.5m13 5H.5" />
+        </svg>
+      </button>
+    </div>
+    <!-- sidebar -->
+    <div
+      class="sidebar bg-blue-800 text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+      <!-- logo -->
+      <a href="#" class="text-white flex items-center space-x-2 px-4">
+        <img class="self-center" src="/public/assets/logo-main.png" width="200px" height="70px" alt="">
+      </a>
+      <!-- nav -->
+      <nav class="space-y-2">
+        <a href="#"
+          class="block py-2.5 px-4 rounded-md transition duration-200 hover:bg-blue-700 hover:text-white">Home</a>
+        <a href="./addNote.html"
+          class="block py-2.5 px-4 rounded-md transition duration-200 hover:bg-blue-700 hover:text-white">Add</a>
+        <a href="#" class="block py-2.5 px-4 rounded-md transition duration-200 hover:bg-blue-700 hover:text-white">All
+          Notes</a>
+      </nav>
+    </div>
+
+    <!-- CONTENT -->
+    <section class="flex-1 p-10 space-y-10">
+      <h1>Your single note</h1>
+    </section>
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>
